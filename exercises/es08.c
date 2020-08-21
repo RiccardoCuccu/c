@@ -13,14 +13,11 @@ int main (int argc, char *argv[]) {
 	scanf("%d", &numbers[3]);
 	printf("Input the fifth number: "); 
 	scanf("%d", &numbers[4]);
-
 	for(j=0; j<5; j++) {
 		if ((numbers[j]%2) != 0) {
 			sum = sum + numbers[j];
 		}
 	}
-
 	printf("Sum of all odd values: %d\n", sum);
-
 	return 0;
 }

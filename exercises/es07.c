@@ -12,9 +12,7 @@ int main (int argc, char *argv[]) {
 	scanf("%d", &x2);
 	printf("Input y2: ");
 	scanf("%d", &y2);
-
 	distance = sqrt(pow(x2-x1,2)+pow(y2-y1,2));
 	printf("Distance between the said points: %.4f\n", distance);
-
 	return 0;
 }
