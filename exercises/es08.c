@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main (int argc, char *argv[]) {
+int main(int argc, char *argv[]) {
 	int numbers[5], j;
 	int sum = 0;
 	printf("Input the first number: "); 

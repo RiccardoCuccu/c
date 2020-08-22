@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main (int argc, char *argv[]) {
+int main(int argc, char *argv[]) {
 	int x, reminder, reverse = 0;
 	printf("Input a number: ");
 	scanf("%d", &x);

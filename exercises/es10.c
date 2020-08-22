@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-int main (int argc, char *argv[]) {
+int main(int argc, char *argv[]) {
 	int x, i;
 	printf("Input an integer: ");
 	scanf("%d", &x);

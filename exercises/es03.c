@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main (int argc, char *argv[]) {
+int main(int argc, char *argv[]) {
 	int height, width, perimeter, area;
 	printf("Enter the height: ");
 	scanf("%d", &height);

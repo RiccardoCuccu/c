@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-int main (int argc, char *argv[]) {
+int main(int argc, char *argv[]) {
 	int x1, y1, x2, y2;
 	float distance;
 	printf("Input x1: ");

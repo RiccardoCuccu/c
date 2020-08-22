@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main (int argc, char *argv[]) {
+int main(int argc, char *argv[]) {
 	enum week{Sun, Mon, Tue, Wed, Thu, Fri, Sat};
 	printf("Sun = %d\n", Sun);
 	printf("Mon = %d\n", Mon);

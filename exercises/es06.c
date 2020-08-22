@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main (int argc, char *argv[]) {
+int main(int argc, char *argv[]) {
 	int days, years, weeks;
 	printf("Enter the number of days: ");
 	scanf("%d", &days);

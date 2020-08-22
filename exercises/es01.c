@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main (int argc, char *argv[]) {
+int main(int argc, char *argv[]) {
 #if __STDC_VERSION__ >=  201710L
 	printf("We are using C18!\n");
 #elif __STDC_VERSION__ >= 201112L

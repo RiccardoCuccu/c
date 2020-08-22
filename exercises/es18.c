@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-int main (int argc, char *argv[]) {
+int main(int argc, char *argv[]) {
 	float x, value;
 	printf("Input value of x: ");
 	scanf("%f", &x);

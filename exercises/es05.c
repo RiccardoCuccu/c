@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main (int argc, char *argv[]) {
+int main(int argc, char *argv[]) {
 	int a = 125, b = 12345;
 	long ax = 1234567890;
 	short s = 4043;
