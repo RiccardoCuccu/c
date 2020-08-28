@@ -214,3 +214,109 @@ Expected Output:
 Input a value (negative): -253
 Absolute value is 253
 ```
+
+## [Exercise 23](https://github.com/RiccardoCuccu/c/blob/master/exercises/es23.c)
+Demonstrates the difference between predecrementing and postdecrementing using the decrement operator `--`. <br/>
+
+## [Exercise 24](https://github.com/RiccardoCuccu/c/blob/master/exercises/es24.c)
+Produce the following table of values using looping. <br/>
+Sample Output:
+```
+x       x+2     x+4     x+6
+--------------------------------
+1       3       5       7
+4       6       8       10
+7       9       11      13
+10      12      14      16
+13      15      17      19
+```
+
+## [Exercise 25](https://github.com/RiccardoCuccu/c/blob/master/exercises/es25.c)
+Reads the side (side sizes between 1 and 10) of a square and prints a hollow square using hash (#) character. <br/>
+Sample Output:
+```
+Input the size of the square: 10
+##########
+#        #
+#        #
+#        #
+#        #
+#        #
+#        #
+#        #
+#        #
+##########
+```
+
+## [Exercise 26](https://github.com/RiccardoCuccu/c/blob/master/exercises/es26.c)
+Display the sizes and ranges for each of C's data types. <br/>
+Sample Output:
+```
+Size of C data types:
+
+Type               Bytes
+-------------------------
+char                 1
+int8_t               1
+unsigned char        1
+uint8_t              1
+short                2
+int16_t              2
+uint16t              2
+int                  4
+unsigned             4
+long                 8
+unsigned long        8
+int32_t              4
+uint32_t             4
+long long            8
+int64_t              8
+unsigned long long   8
+uint64_t             8
+float                4
+double               8
+long double          16
+_Bool                1
+```
+
+## [Exercise 27](https://github.com/RiccardoCuccu/c/blob/master/exercises/es27.c)
+Find the angle between (12:00 to 11:59) the hour hand and the minute hand of a clock. <br/>
+The hour hand and the minute hand is always among 0 degree and 180 degree. For example, when it's 12 o'clock, the angle of the two hands is 0 while 3:00 is 90 degree and 6:00 is 180 degree. <br/>
+Sample Output:
+```
+Input hour(h) and minute(m) (separated by a space):
+The angle is -246 degrees at 00:41.
+```
+
+## [Exercise 28](https://github.com/RiccardoCuccu/c/blob/master/exercises/es28.c)
+Invoke the command processor to execute a command.
+
+## [Exercise 29](https://github.com/RiccardoCuccu/c/blob/master/exercises/es29.c)
+Convert an input to an unsigned long integer.
+
+## [Exercise 30](https://github.com/RiccardoCuccu/c/blob/master/exercises/es30.c)
+Convert a string to a long integer.
+
+## [Exercise 31](https://github.com/RiccardoCuccu/c/blob/master/exercises/es31.c)
+Convert a string to a double.
+
+## [Exercise 32](https://github.com/RiccardoCuccu/c/blob/master/exercises/es32.c)
+Generate a random number.
+
+## [Exercise 33](https://github.com/RiccardoCuccu/c/blob/master/exercises/es33.c)
+Sort the elements of an array.
+
+## [Exercise 34](https://github.com/RiccardoCuccu/c/blob/master/exercises/es34.c)
+Show the basic declaration of pointer.
+
+## [Exercise 35](https://github.com/RiccardoCuccu/c/blob/master/exercises/es35.c)
+Demonstrate the use of &(address of) and \*(value at address) operator.
+
+## [Exercise 36](https://github.com/RiccardoCuccu/c/blob/master/exercises/es36.c)
+Multiply two numbers using pointers.
+
+## [Exercise 37](https://github.com/RiccardoCuccu/c/blob/master/exercises/es37.c)
+Show how a function returning pointer.
+
+## [Exercise 38](https://github.com/RiccardoCuccu/c/blob/master/exercises/es38.c)
+Show the usage of pointer to structure.
