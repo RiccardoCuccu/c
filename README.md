@@ -320,3 +320,15 @@ Show how a function returning pointer.
 
 ## [Exercise 38](https://github.com/RiccardoCuccu/c/blob/master/exercises/es38.c)
 Show the usage of pointer to structure.
+
+## [Exercise 39](https://github.com/RiccardoCuccu/c/blob/master/exercises/es39.c)
+Input a string and print it.
+
+## [Exercise 40](https://github.com/RiccardoCuccu/c/blob/master/exercises/es40.c)
+Find the length of a string without using library function.
+
+## [Exercise 41](https://github.com/RiccardoCuccu/c/blob/master/exercises/es41.c)
+Print individual characters of string in reverse order.
+
+## [Exercise 42](https://github.com/RiccardoCuccu/c/blob/master/exercises/es42.c)
+read a sentence and replace lowercase characters by uppercase and vice-versa
