@@ -331,4 +331,4 @@ Find the length of a string without using library function.
 Print individual characters of string in reverse order.
 
 ## [Exercise 42](https://github.com/RiccardoCuccu/c/blob/master/exercises/es42.c)
-read a sentence and replace lowercase characters by uppercase and vice-versa
+Read a sentence and replace lowercase characters by uppercase and vice-versa.
