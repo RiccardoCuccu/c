@@ -332,3 +332,36 @@ Print individual characters of string in reverse order.
 
 ## [Exercise 42](https://github.com/RiccardoCuccu/c/blob/master/exercises/es42.c)
 Read a sentence and replace lowercase characters by uppercase and vice-versa.
+
+## [Exercise 43](https://github.com/RiccardoCuccu/c/blob/master/exercises/es43.c)
+Concatenate two strings manually.
+
+## [Exercise 44](https://github.com/RiccardoCuccu/c/blob/master/exercises/es44.c)
+Check whether a character is Hexadecimal Digit or not.
+
+## [Exercise 45](https://github.com/RiccardoCuccu/c/blob/master/exercises/es45.c)
+Read a file and remove the spaces between two words of its content.
+
+## [Exercise 46](https://github.com/RiccardoCuccu/c/blob/master/exercises/es46.c)
+Split string by space into words.
+
+## [Exercise 47](https://github.com/RiccardoCuccu/c/blob/master/exercises/es47.c)
+Print the current time and the time that has passed since 9 November 1989.
+
+## [Exercise 48](https://github.com/RiccardoCuccu/c/blob/master/exercises/es48.c)
+Create and store information in a text file.
+
+## [Exercise 49](https://github.com/RiccardoCuccu/c/blob/master/exercises/es49.c)
+Write and read multiple lines in a text file.
+
+## [Exercise 50](https://github.com/RiccardoCuccu/c/blob/master/exercises/es50.c)
+Replace a specific line with another text in a file.
+
+## [Exercise 51](https://github.com/RiccardoCuccu/c/blob/master/exercises/es51.c)
+Append multiple lines at the end of a text file.
+
+## [Exercise 52](https://github.com/RiccardoCuccu/c/blob/master/exercises/es52.c)
+Encrypt a text file.
+
+## [Exercise 53](https://github.com/RiccardoCuccu/c/blob/master/exercises/es53.c)
+Pars the `results.txt` file, doubles the contained values and saves the results in a new file.

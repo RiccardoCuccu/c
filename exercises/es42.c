@@ -6,7 +6,7 @@ int main(int argc, char *argv[]) {
 	char str[100];
 	int len, ch, i;
 	printf("Input the string: ");
-	fgets(str, sizeof(str), stdin);  
+	fgets(str, sizeof(str), stdin);
 	len=strlen(str);
 	printf("After case changed the string is: ");
 	for(i=0; i<len; i++) {
