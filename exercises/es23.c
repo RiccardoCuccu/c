@@ -1,14 +1,15 @@
 #include <stdio.h>
 
 int main(int argc, char *argv[]) {
-	int x = 10;
-	printf("Predecrementing:\n");
+	int x;
+	x = 10;
+	printf("Postdecrementing:\n");
 	printf("x   = %d\n", x);
 	printf("x-- = %d\n", x--);
 	printf("x   = %d\n\n", x);
 	
 	x = 10;
-	printf("Postdecrementing:\n");
+	printf("Predecrementing:\n");
 	printf("  x = %d\n", x);
 	printf("--x = %d\n", --x);
 	printf("  x = %d\n", x);

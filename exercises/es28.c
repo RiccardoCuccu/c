@@ -4,12 +4,9 @@
 int main(int argc, char *argv[]) {
 	char str[100];
 	int x;
-	if(system(NULL))
-	{
+	if(system(NULL)) {
 		printf("Command processor available!\n");
-	}
-	else
-	{
+	} else {
 		printf("Command processor not available!\n");
 		exit(1);
 	}

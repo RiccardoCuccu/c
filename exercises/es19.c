@@ -15,16 +15,16 @@ int main(int argc, char *argv[]) {
 	/* Intializes pseudo-random number generator with the current calendar time */
 	srand(time(NULL));		
 	fprintf(frand, "%d\n", N);
-	for(i=0; i<N; i++) {
+	for (i=0; i<N; i++) {
 		/* rand() % (max_number + 1 - minimum_number) + minimum_number */
 		fprintf(frand, "%0.4f\n", (rand() % (501 + 500) - 500)/1.e3 );
 	}
 	fclose(frand);
-	frand = fopen ("rand.dat", "r");  
+	frand = fopen("rand.dat", "r");  
 	character = fgetc(frand);
 	while (character!=EOF)
 		{
-			printf ("%c", character);
+			printf("%c", character);
 			character = fgetc(frand);
 		}
 	fclose(frand);

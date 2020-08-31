@@ -5,7 +5,7 @@
 int main(int argc, char *argv[]) {
 	int number, input;
 	/* Initialize random seed */
-	srand (time(NULL));
+	srand(time(NULL));
 	/* Generate a random number between 1 and 10 */
 	number = rand() % 10 + 1;
 	do {
@@ -16,6 +16,6 @@ int main(int argc, char *argv[]) {
 		else if (number < input)
 			printf ("The number is lower.\n");
 	} while (number!=input);
-	printf ("That is correct!\n");
+	printf("That is correct!\n");
 	return 0;
 }
