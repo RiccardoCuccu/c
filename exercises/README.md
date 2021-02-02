@@ -1,5 +1,4 @@
-# c
-C exercises
+# C exercises
 
 ## [Exercise 00](https://github.com/RiccardoCuccu/c/blob/master/exercises/es00.c)
 Print "Hello World!".
