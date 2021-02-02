@@ -37,9 +37,9 @@ int main(int argc, char *argv[]){
 	char n[DIM];
 	FILE *f;
 
-	//printf("Inserire il nome del file da analizzare: ");
-	//scanf("%s", filename);
-	strcpy(filename, "./work/stringnum.txt");
+	printf("Inserire il nome del file da analizzare: ");
+	scanf("%s", filename);
+	//strcpy(filename, "./work/stringnum.txt");
 
 	f = fopen(filename, "r");						// apertura file in lettura
 	if(f == NULL) {
