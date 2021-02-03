@@ -1,0 +1,5 @@
+29333 Mario,      Rossi,    2 RG
+34211 Irene,      De Neri,  3 FC
+23432 Pier Maria, Bianchi,  3 RG ciao mamma
+35211 Giuseppe,   Verdi,    4 FC odio questo esame!
+22222 Chiara,     Blu,      2 RG
