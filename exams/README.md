@@ -44,3 +44,20 @@ Si scriva una funzione C che prenda come parametri il nome del file e un anno di
 Nel caso che il file non esista, oppure l'anno di corso non sia compreso tra 1 e 5 la funzione deve restituire il valore `-1`.
 
 Si scriva infine la funzione `main` necessaria per verificare la correttezza della funzione precedente, questa deve ricevere il nome del file e l'anno di corso sulla linea di comando.
+
+## [Exam 04](https://github.com/RiccardoCuccu/c/blob/master/exams/ex04.c)
+Si considerino le seguenti definizioni di tipo che rappresentano rispettivamente un numero complesso ed un segmento nel piano complesso (identificato dai suoi estremi).
+```
+struct Complesso {
+  float re;         /* parte reale */   
+  float im;         /* parte immaginaria */
+};
+```
+```
+struct Segmento {
+  struct Complesso p1;
+  struct Complesso p2;
+};
+```
+Diciamo che un segmento *appartiene* ad un quadrante (tra 1 e 4) se entrambi i suoi estremi sono contenuti nello stesso quadrante. Se gli estremi sono in quadranti diversi, un segmento non appartiene ad alcun quadrante. Si assuma che i punti non possano giacere sugli assi del piano.<br/>
+Si scriva una funzione C che prenda come parametri un vettore di segmenti e la sua dimensione e restituisca un valore tra 1 e 4 che corrisponde al quadrante del piano complesso a cui appartiene il maggior numero di segmenti.
