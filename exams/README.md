@@ -9,7 +9,7 @@ due due stop
 sette zero sette stop
 ```
 Il file contiene i numeri `859`, `22` e `707`.<br/>
-Si scriva un programma C, opportunamente organizzato in funzioni, che legga da tastiera il nome del file e stampi il valore della somma dei numeri ivi contenuti. Nell’esempio il programma deve stampare `1588`.<br/>
+Si scriva un programma C, opportunamente organizzato in funzioni, che legga da tastiera il nome del file e stampi il valore della somma dei numeri ivi contenuti. Nell'esempio il programma deve stampare `1588`.<br/>
 Si assuma che i numeri siano di dimensione tale da essere rappresentabili tramite il tipo `int`.
 
 ## [Exam 02](https://github.com/RiccardoCuccu/c/blob/master/exams/ex02.c)
@@ -27,3 +27,20 @@ Si scriva una funzione C che dati come parametri un vettore di partite e la sua 
 - `1` se il giocatore 1 ha vinto più partite del giocatore 2;
 - `-1` se il giocatore 2 ha vinto più partite del giocatore 1;
 - `0` in caso di pari numero di vittorie.
+
+Si scriva infine la funzione `main` necessaria per verificare la correttezza della funzione precedente.
+
+## [Exam 03](https://github.com/RiccardoCuccu/c/blob/master/exams/ex03.c)
+Un file contiene una sequenza (di lunghezza ignota) di studenti iscritti per una prova d'esame. Ogni riga del file contiene la matricola, il nome, il cognome e l'anno di corso di uno studente, più un eventuale commento. Come esempio si consideri il seguente file.
+```
+29333 Mario,      Rossi,    2 RG
+34211 Irene,      De Neri,  3 FC
+23432 Pier Maria, Bianchi,  3 RG ciao mamma
+35211 Giuseppe,   Verdi,    4 FC odio questo esame!
+22222 Chiara,     Blu,      2 RG
+```
+Si noti che il nome e il cognome possono contenere spazi bianchi e sono seguiti da una virgola. Si noti inoltre che l'anno di corso è composto da un numero, uno spazio bianco e i due caratteri `FC` o `RG`, a seconda che lo studente sia fuori corso o regolare, rispettivamente. Si assuma infine che il numero di spazi bianchi dopo la virgola sia arbitrario.<br/>
+Si scriva una funzione C che prenda come parametri il nome del file e un anno di corso (un intero tra 1 e 5), e restituisca il numero di studenti iscritti fuori corso per quell'anno.<br/>
+Nel caso che il file non esista, oppure l'anno di corso non sia compreso tra 1 e 5 la funzione deve restituire il valore `-1`.
+
+Si scriva infine la funzione `main` necessaria per verificare la correttezza della funzione precedente, questa deve ricevere il nome del file e l'anno di corso sulla linea di comando.
