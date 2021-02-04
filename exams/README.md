@@ -170,3 +170,42 @@ Il programma deve essere realizzato in modo modulare, scomponendolo nelle seguen
 - la funzione `main` con passaggio dell'argomento sulla linea di comando;
 - una funzione di lettura del cruciverba dal file;
 - una funzione di ricerca delle parole e scrittura sul file.
+
+## Exam 08
+Un robot è in grado di muoversi nel piano nelle quattro direzioni nord, sud, est ed ovest (denotate rispettivamente dai caratteri `N`, `S`, `E` ed `O`). In particolare, il robot accetta comandi che consistono in una direzione e un intero positivo, che rappresenta la distanza (in metri) da percorrere in quella direzione.<br/>
+I comandi sono immagazzinati in un file, in cui ogni riga contiene un comando, e vengono eseguiti dal robot in sequenza.<br/>
+Si riportano, come esempio, tre file di comandi:
+```
+N 10           | N 10           | N 10           |
+E 5            | E 5            | E 5            |
+S 4            | S 4            | S 4            |
+S 9            | S 6            | S 6            |
+O 3            | O 3            | O 5            |
+---------------+----------------+----------------+
+ESEMPIO 1      | ESEMPIO 2      | ESEMPIO 3      |
+```
+
+### [Exam 08.1](https://github.com/RiccardoCuccu/c/blob/master/exams/ex08.1.c)
+Dopo avere eseguito i comandi contenuti nel file di input, il robot si è spostato, rispetto alla posizione iniziale, in due (cfr. esempio 1), una (cfr. esempio 2) o nessuna (cfr. esempio 3) delle quattro direzioni `N`, `S`, `E` ed `O`.<br/>
+Scrivere un funzione C che, ricevuto come parametro il nome del file di input, stampi su schermo in quali direzioni e di quanti metri si è spostato il robot. Ad esempio, facendo riferimento ai file sopra riportati, si devono effettuare le stampe:
+```
+3 METRI VERSO S | 2 METRI VERSO E |               |
+2 METRI VERSO E |                 |               |
+----------------+-----------------+---------------+
+ESEMPIO 1       | ESEMPIO 2       | ESEMPIO 3     |
+```
+
+### [Exam 08.2](https://github.com/RiccardoCuccu/c/blob/master/exams/ex08.2.c)
+Si vuole determinare la sequenza di comandi, della stessa lunghezza di quella di input, da dare al robot per tornare al punto di partenza ripercorrendo a ritroso esattamente la
+stessa strada.<br/>
+Si scriva una funzione C che prenda come parametro il nome del file di input ed il nome di un file di output e scriva sul file di output la sequenza determinata. Si assuma che la lunghezza massima della sequenza di comandi sia pari a 100.<br/>
+Ad esempio, facendo riferimento ai file sopra riportati, le sequenze di comandi che fanno ritornare il robot al punto di partenza sono le seguenti:
+```
+E 3            | E 3            | E 5            |
+N 9            | N 6            | N 6            |
+N 4            | N 4            | N 4            |
+O 5            | O 5            | O 5            |
+S 10           | S 10           | S 10           |
+---------------+----------------+----------------+
+ESEMPIO 1      | ESEMPIO 2      | ESEMPIO 3      |
+```
