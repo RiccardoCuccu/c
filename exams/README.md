@@ -72,3 +72,58 @@ Un file contiene una sequenza (di lunghezza ignota) di uguaglianze tra somme di 
 ```
 Si noti che le uguaglianze possono essere sia corrette (le prime tre) che sbagliate (l'ultima).<br/>
 Si scriva una funzione C che prenda come parametro il nome del file e restituisca la frazione di uguaglianze corrette del file. Nell'esempio la funzione deve restituire 0.75.
+
+## [Exam 06](https://github.com/RiccardoCuccu/c/blob/master/exams/ex06.c)
+Le immagini *bitmap* sono rappresentate mediante una matrice di punti (pixel) ciascuno dei quali è descritto da una tripletta di colori RGB, che contiene i valori di intensità, da 0 a 255, dei tre colori fondamentali rosso, verde e blu. Si considerino dei file bitmap organizzati come segue: la prima riga contiene, nell'ordine, i due numeri interi *N* e *M* che rappresentano il numero di righe e il numero di colonne della matrice di pixel; poi il file contiene le triplette che rappresentano i pixel (un pixel per riga) a partire dalla prima riga, prima colonna (pixel in alto a sinistra nell'immagine), e procedendo con tutte le colonne della riga. Ogni pixel è rappresentato dai tre numeri nella sequenza: rosso, verde, blu.<br/>
+Ad esempio, il file seguente rappresenta un'immagine 3 × 4 (4 righe e 3 colonne) con un punto in alto a sinistra bianco (i tre colori sono al massimo dell'intensità) e il resto della prima riga nero (tutti zeri); poi una riga grigia, e due righe con punti rossi (255, 0, 0), verdi (0, 255, 0), blu (0, 0, 255), azzurri (0, 255, 255), gialli (255, 255, 0) e magenta (255, 0, 255).
+```
+4 3
+255 255 255
+0 0 0
+0 0 0
+127 127 127
+127 127 127
+127 127 127
+255 0 0 0
+255 0 0
+255 255
+0 0 255
+255 255 0
+255 0 255
+```
+Si scriva un programma che trasformi un'immagine bitmap a colori in un'altra in bianco e nero, cioè in cui i tre colori di ogni tripletta hanno uguale intensità, pari alla media delle intensità dei colori del pixel originale. Inoltre, il programma deve aggiungere alla figura un contorno costituito da una linea bianca (spessa un pixel).<br/>
+Il file seguente è il risultato del programma applicato al file precedente.<br/>
+```
+6 5
+255 255 255
+255 255 255
+255 255 255
+255 255 255
+255 255 255
+255 255 255
+255 255 255
+0 0 0
+0 0 0
+255 255 255
+255 255 255
+127 127 127
+127 127 127
+127 127 127
+255 255 255
+255 255 255
+85 85 85
+85 85 85
+170 170 170
+255 255 255
+255 255 255
+85 85 85
+170 170 170
+170 170 170
+255 255 255
+255 255 255
+255 255 255
+255 255 255
+255 255 255
+255 255 255
+```
+I nomi dei file bitmap di ingresso e di uscita devono essere passati come parametri sulla linea di comando. Si supponga che le immagini abbiano dimensioni massime 600 × 480 (colonne × righe).
