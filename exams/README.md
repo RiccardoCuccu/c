@@ -92,7 +92,7 @@ Ad esempio, il file seguente rappresenta un'immagine 3 × 4 (4 righe e 3 colonne
 255 0 255
 ```
 Si scriva un programma che trasformi un'immagine bitmap a colori in un'altra in bianco e nero, cioè in cui i tre colori di ogni tripletta hanno uguale intensità, pari alla media delle intensità dei colori del pixel originale. Inoltre, il programma deve aggiungere alla figura un contorno costituito da una linea bianca (spessa un pixel).<br/>
-Il file seguente è il risultato del programma applicato al file precedente.<br/>
+Il file seguente è il risultato del programma applicato al file precedente.
 ```
 6 5
 255 255 255
@@ -127,3 +127,46 @@ Il file seguente è il risultato del programma applicato al file precedente.<br/
 255 255 255
 ```
 I nomi dei file bitmap di ingresso e di uscita devono essere passati come parametri sulla linea di comando. Si supponga che le immagini abbiano dimensioni massime 600 × 480 (colonne × righe).
+
+## [Exam 07](https://github.com/RiccardoCuccu/c/blob/master/exams/ex07.c)
+Lo schema di un cruciverba è memorizzato in un file nel seguente formato: la prima riga contiene due numeri interi che indicano, rispettivamente, il numero di righe e il numero di colonne del cruciverba; le righe successive riportano le righe del cruciverba, con uno spazio in corrispondenza delle caselle nere. Come esempio si consideri il file seguente.
+```
+8 6
+SUGLI
+ODIATI
+TIRI N
+TRI CD
+IE POI
+L MELA
+EDISON
+CAINO 
+```
+Come è noto, è necessaria una definizione per ogni parola, verticale o orizzontale, lunga almeno due lettere. Si scriva un programma C che riceva come argomento sulla linea di comando il nome del file contenente il cruciverba e scriva nel file `parole.txt` l'elenco delle parole di cui serve una definizione, suddivise in orizzontali e verticali (separate da una linea vuota). Non si richiede che l'ordine in cui compaiono le parole nel file sia lo stesso con cui vengono numerate le definizioni dei normali cruciverba.<br/>
+Si assuma che la dimensione massima di un cruciverba sia 50 × 50. Nell'esempio, il file `parole.txt` sarà il seguente.
+```
+SUGLI
+ODIATI
+TIRI
+TRI
+CD
+IE
+POI
+MELA
+EDISON
+CAINO
+
+SOTTILE
+UDIRE
+DC
+GIRI
+MIA
+LAI
+PESI
+IT
+COLON
+INDIANO
+```
+Il programma deve essere realizzato in modo modulare, scomponendolo nelle seguenti funzioni:
+- la funzione `main` con passaggio dell'argomento sulla linea di comando;
+- una funzione di lettura del cruciverba dal file;
+- una funzione di ricerca delle parole e scrittura sul file.
