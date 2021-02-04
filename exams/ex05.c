@@ -3,15 +3,14 @@
 #include <string.h>
 #include <errno.h>
 
-int main(int argc, char *argv[]) {
+float percentage(char *filename) {
 
 	int i, e1, e2, flag, total;
 	int eq = 0;							// equal
 	int ne = 0;							// not equal
-	float perc;
-	char num[32];
+	float p;
+	char num[32] = "";
 	char line[256];
-	char filename[] = "./work/sums.txt";
 	FILE *f;
 
 	f = fopen(filename, "r");					// apertura file in lettura
@@ -50,7 +49,18 @@ int main(int argc, char *argv[]) {
 	}
 
 	total = eq + ne;						// numero totale di uguaglianze
-	perc = (float) eq / total * 100;				// percentuale di uguaglianze corrette
+	p = (float) eq / total;						// percentuale di uguaglianze corrette
+
+	return p;
+
+}
+
+int main(int argc, char *argv[]) {
+
+	float perc;
+	char filename[] = "./work/sums.txt";
+
+	perc = percentage(filename) * 100;
 
 	printf("La percentuale di uguaglianze corrette è del %.f%%!\n", perc);
 
