@@ -31,21 +31,21 @@ int main(int argc, char *argv[]) {
 	fprintf(fout, "%d %d\n", N+2, M+2);
 
 	for(m = 0; m < M+2; m++) {
-		fprintf(fout, "255 255 255\n");				// scrittura prima riga matrice (pixel neri)
+		fprintf(fout, "255 255 255\n");				// scrittura prima riga matrice (pixel bianchi)
 	}
 
 	for(n = 0; n < N; n++) {		
-		fprintf(fout, "255 255 255\n");				// scrittura prima colonna matrice (pixel neri)
+		fprintf(fout, "255 255 255\n");				// scrittura prima colonna matrice (pixel bianchi)
 		for(m = 0; m < M; m++) {
 			fscanf(fin, "%d %d %d", &R, &G, &B);		// estrazione del valore dei pixel
 			BN = (R + G + B) / 3;				// conversione in b/n
 			fprintf(fout, "%d %d %d\n", BN, BN, BN);	// scrittura pixel intermedi
 		}
-		fprintf(fout, "255 255 255\n");				// scrittura ultima colonna matrice (pixel neri)
+		fprintf(fout, "255 255 255\n");				// scrittura ultima colonna matrice (pixel bianchi)
 	}
 
 	for(m = 0; m < M+2; m++) {
-		fprintf(fout, "255 255 255\n");				// scrittura ultima riga matrice (pixel neri)
+		fprintf(fout, "255 255 255\n");				// scrittura ultima riga matrice (pixel bianchi)
 	}
 
 	fclose(fin);
