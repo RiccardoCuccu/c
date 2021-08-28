@@ -1,0 +1,11 @@
+# questo è un commento
+start:	xor r0 r0	# questo è un altro commento
+	mv r1 r2	# ecc.
+# inizia il ciclo
+loop:	ldbr r3 r2	# copia in R3 l'i-esimo carattere della stringa
+	jmpz end	# se vale zero ('\0') la stringa è finita
+	inc r0		# incrementa il contatore
+	inc r2		# incrementa il puntatore
+	jmp loop	# ripete
+end:	ret
+# (commento) fine del programma

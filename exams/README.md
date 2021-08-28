@@ -1,7 +1,7 @@
 # C exams
 The texts of the exams contained here were taken from the [lecture notes](http://www.diegm.uniud.it/schaerf/Fondamenti/dispensa.pdf) of the Foundations of Computer Science of the course of Mechanical Engineering (A.A. 2013-14) of the University of Udine and are for this reason in Italian.<br/>
 
-## [Exam 01](https://github.com/RiccardoCuccu/c/blob/master/exams/ex01.c)
+## [Exam 01 - 19/03/2001](https://github.com/RiccardoCuccu/c/blob/master/exams/ex01.c)
 Un file contiene una sequenza (di lunghezza ignota) di numeri interi positivi, uno per riga. I numeri sono scritti in lettere cifra per cifra, e sono terminati dalla parola `stop`. Come esempio si consideri il seguente file:
 ```
 otto cinque nove stop
@@ -12,7 +12,7 @@ Il file contiene i numeri `859`, `22` e `707`.<br/>
 Si scriva un programma C, opportunamente organizzato in funzioni, che legga da tastiera il nome del file e stampi il valore della somma dei numeri ivi contenuti. Nell'esempio il programma deve stampare `1588`.<br/>
 Si assuma che i numeri siano di dimensione tale da essere rappresentabili tramite il tipo `int`.
 
-## [Exam 02](https://github.com/RiccardoCuccu/c/blob/master/exams/ex02.c)
+## [Exam 02 - 19/03/2001](https://github.com/RiccardoCuccu/c/blob/master/exams/ex02.c)
 Si consideri il seguente gioco a due giocatori. In una partita vengono lanciati un dado per ogni giocatore ed una sola moneta. Se il lancio della moneta è testa, la partita è vinta dal giocatore che ha ottenuto il punteggio più alto nel lancio del proprio dado. Se invece esce croce, la partita è vinta dal giocatore che ha ottenuto il punteggio più basso. Se i dadi hanno lo stesso valore la partita è un pareggio.<br/>
 Si consideri la seguente definizione di tipo
 ```
@@ -30,7 +30,7 @@ Si scriva una funzione C che dati come parametri un vettore di partite e la sua 
 
 Si scriva infine la funzione `main` necessaria per verificare la correttezza della funzione precedente.
 
-## [Exam 03](https://github.com/RiccardoCuccu/c/blob/master/exams/ex03.c)
+## [Exam 03 - 02/04/2001](https://github.com/RiccardoCuccu/c/blob/master/exams/ex03.c)
 Un file contiene una sequenza (di lunghezza ignota) di studenti iscritti per una prova d'esame. Ogni riga del file contiene la matricola, il nome, il cognome e l'anno di corso di uno studente, più un eventuale commento. Come esempio si consideri il seguente file.
 ```
 29333 Mario,      Rossi,    2 RG
@@ -45,7 +45,7 @@ Nel caso che il file non esista, oppure l'anno di corso non sia compreso tra 1 e
 
 Si scriva infine la funzione `main` necessaria per verificare la correttezza della funzione precedente, questa deve ricevere il nome del file e l'anno di corso sulla linea di comando.
 
-## [Exam 04](https://github.com/RiccardoCuccu/c/blob/master/exams/ex04.c)
+## [Exam 04 - 02/04/2001](https://github.com/RiccardoCuccu/c/blob/master/exams/ex04.c)
 Si considerino le seguenti definizioni di tipo che rappresentano rispettivamente un numero complesso ed un segmento nel piano complesso (identificato dai suoi estremi).
 ```
 struct Complesso {
@@ -62,7 +62,7 @@ struct Segmento {
 Diciamo che un segmento *appartiene* ad un quadrante (tra 1 e 4) se entrambi i suoi estremi sono contenuti nello stesso quadrante. Se gli estremi sono in quadranti diversi, un segmento non appartiene ad alcun quadrante. Si assuma che i punti non possano giacere sugli assi del piano.<br/>
 Si scriva una funzione C che prenda come parametri un vettore di segmenti e la sua dimensione e restituisca un valore tra 1 e 4 che corrisponde al quadrante del piano complesso a cui appartiene il maggior numero di segmenti.
 
-## [Exam 05](https://github.com/RiccardoCuccu/c/blob/master/exams/ex05.c)
+## [Exam 05 - 09/07/2001](https://github.com/RiccardoCuccu/c/blob/master/exams/ex05.c)
 Un file contiene una sequenza (di lunghezza ignota) di uguaglianze tra somme di interi positivi, una per riga, ciascuna terminata da un punto e virgola, e senza spazio bianchi. Come esempio, si consideri il seguente file:
 ```
 2+3+12=9+8;
@@ -73,7 +73,7 @@ Un file contiene una sequenza (di lunghezza ignota) di uguaglianze tra somme di 
 Si noti che le uguaglianze possono essere sia corrette (le prime tre) che sbagliate (l'ultima).<br/>
 Si scriva una funzione C che prenda come parametro il nome del file e restituisca la frazione di uguaglianze corrette del file. Nell'esempio la funzione deve restituire 0.75.
 
-## [Exam 06](https://github.com/RiccardoCuccu/c/blob/master/exams/ex06.c)
+## [Exam 06 - 09/07/2001](https://github.com/RiccardoCuccu/c/blob/master/exams/ex06.c)
 Le immagini *bitmap* sono rappresentate mediante una matrice di punti (pixel) ciascuno dei quali è descritto da una tripletta di colori RGB, che contiene i valori di intensità, da 0 a 255, dei tre colori fondamentali rosso, verde e blu. Si considerino dei file bitmap organizzati come segue: la prima riga contiene, nell'ordine, i due numeri interi *N* e *M* che rappresentano il numero di righe e il numero di colonne della matrice di pixel; poi il file contiene le triplette che rappresentano i pixel (un pixel per riga) a partire dalla prima riga, prima colonna (pixel in alto a sinistra nell'immagine), e procedendo con tutte le colonne della riga. Ogni pixel è rappresentato dai tre numeri nella sequenza: rosso, verde, blu.<br/>
 Ad esempio, il file seguente rappresenta un'immagine 3 × 4 (4 righe e 3 colonne) con un punto in alto a sinistra bianco (i tre colori sono al massimo dell'intensità) e il resto della prima riga nero (tutti zeri); poi una riga grigia, e due righe con punti rossi (255, 0, 0), verdi (0, 255, 0), blu (0, 0, 255), azzurri (0, 255, 255), gialli (255, 255, 0) e magenta (255, 0, 255).
 ```
@@ -128,7 +128,7 @@ Il file seguente è il risultato del programma applicato al file precedente.
 ```
 I nomi dei file bitmap di ingresso e di uscita devono essere passati come parametri sulla linea di comando. Si supponga che le immagini abbiano dimensioni massime 600 × 480 (colonne × righe).
 
-## [Exam 07](https://github.com/RiccardoCuccu/c/blob/master/exams/ex07.c)
+## [Exam 07 - 23/07/2001](https://github.com/RiccardoCuccu/c/blob/master/exams/ex07.c)
 Lo schema di un cruciverba è memorizzato in un file nel seguente formato: la prima riga contiene due numeri interi che indicano, rispettivamente, il numero di righe e il numero di colonne del cruciverba; le righe successive riportano le righe del cruciverba, con uno spazio in corrispondenza delle caselle nere. Come esempio si consideri il file seguente.
 ```
 8 6
@@ -171,7 +171,7 @@ Il programma deve essere realizzato in modo modulare, scomponendolo nelle seguen
 - una funzione di lettura del cruciverba dal file;
 - una funzione di ricerca delle parole e scrittura sul file.
 
-## Exam 08
+## Exam 08 - 06/09/2001
 Un robot è in grado di muoversi nel piano nelle quattro direzioni nord, sud, est ed ovest (denotate rispettivamente dai caratteri `N`, `S`, `E` ed `O`). In particolare, il robot accetta comandi che consistono in una direzione e un intero positivo, che rappresenta la distanza (in metri) da percorrere in quella direzione.<br/>
 I comandi sono immagazzinati in un file, in cui ogni riga contiene un comando, e vengono eseguiti dal robot in sequenza.<br/>
 Si riportano, come esempio, tre file di comandi:
@@ -208,4 +208,32 @@ O 5            | O 5            | O 5            |
 S 10           | S 10           | S 10           |
 ---------------+----------------+----------------+
 ESEMPIO 1      | ESEMPIO 2      | ESEMPIO 3      |
+```
+
+## [Exam 09 - 23/07/2001](https://github.com/RiccardoCuccu/c/blob/master/exams/ex09.c)
+Un dato linguaggio di programmazione prevede l'inserimento di commenti nel codice sorgente mediante il carattere `#` che deve precedere il testo del commento. Il commento termina alla fine della riga. Come esempio si consideri il seguente file.
+```
+# questo è un commento
+start:	xor r0 r0	# questo è un altro commento
+	mv r1 r2	# ecc.
+# inizia il ciclo
+loop:	ldbr r3 r2	# copia in R3 l'i-esimo carattere della stringa
+	jmpz end	# se vale zero ('\0') la stringa è finita
+	inc r0		# incrementa il contatore
+	inc r2		# incrementa il puntatore
+	jmp loop	# ripete
+end:	ret
+# (commento) fine del programma
+```
+
+Si scriva una funzione C che riceva come parametro il nome del file sorgente contenente i commenti, che ha estensione .tic, e scriva un file con il medesimo nome ma estensione .toc contenente soltanto tutte le istruzioni e non i commenti. Il file risultante dall'esempio sarà:
+```
+start:	xor r0 r0
+	mv r1 r2
+loop:	ldbr r3 r2
+	jmpz end
+	inc r0
+	inc r2
+	jmp loop
+end:	ret
 ```
