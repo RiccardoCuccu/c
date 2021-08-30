@@ -268,7 +268,7 @@ Lecce - Hellas_Verona 1-1 X
 **Suggerimento**: per poter scrivere sullo stesso file è consigliato copiare tutto il contenuto del file in una opportuna struttura dati in memoria centrale e successivamente ritrasferire i dati dalla memoria al file (a questo scopo è necessario aprire e chiudere il file due volta con modalità diverse).
 
 ## [Exam 11 - 30/06/2003](https://github.com/RiccardoCuccu/c/blob/master/exams/ex11.c)
-Si consideri una matrice di caratteri 8×8 che contiene la posizione di una partita di scacchi. I pezzi bianchi sono rappresentati dalla loro iniziale minuscola: `r`, `d`, `a`, `c`, `t`, e `p` rispettivamente per re, donna, alfiere, cavallo, torre e pedone; i pezzi neri sono rappresentati dalla stessa iniziale maiuscola `R`, `D`, `A`, `C`, `T`, e `P`. Le caselle vuote sono rappresentate dallo spazio. Ad esempio la seguente matrice rappresenta la posizione iniziale.
+Si consideri una matrice di caratteri 8 × 8 che contiene la posizione di una partita di scacchi. I pezzi bianchi sono rappresentati dalla loro iniziale minuscola: `r`, `d`, `a`, `c`, `t`, e `p` rispettivamente per re, donna, alfiere, cavallo, torre e pedone; i pezzi neri sono rappresentati dalla stessa iniziale maiuscola `R`, `D`, `A`, `C`, `T`, e `P`. Le caselle vuote sono rappresentate dallo spazio. Ad esempio la seguente matrice rappresenta la posizione iniziale.
 ```
 t c a r d a c t
 p p p p p p p p
@@ -282,15 +282,15 @@ T C A R D A C T
 
 Si vuole scrivere una funzione che valuti chi è in vantaggio nella posizione corrente dal punto di vista del materiale presente sulla scacchiera. A questo scopo si usi la seguente valutazione dei pezzi: pedone = 1, cavallo = 3, alfiere = 3, torre = 5, donna = 9, re = non ha valore.<br/>
 Si scriva una funzione C (opportunamente modularizzata tramite funzioni ausiliarie) che prenda come parametro una matrice siffatta e restituisca:
-- 1, se il bianco ha più materiale del nero;
-- 2, se il nero ha più materiale del bianco;
-- 0, se il materiale è pari;
-- -1, se la posizione sulla scacchiera non è legale.
+- `1` se il bianco ha più materiale del nero;
+- `2` se il nero ha più materiale del bianco;
+- `0` se il materiale è pari;
+- `-1` se la posizione sulla scacchiera non è legale.
 
-Ad esempio, se viene passata la posizione iniziale, la funzione deve restituire 0, perché il materiale è pari (39 ciascuno: 5+3+3+9+3+3+5+1+1+1+1+1+1+1+1).<br/>
+Ad esempio, se viene passata la posizione iniziale, la funzione deve restituire `0`, perché il materiale è pari (39 ciascuno: 5+3+3+9+3+3+5+1+1+1+1+1+1+1+1).<br/>
 Una posizione non è legale solo nei seguenti tre casi:
-- Un pedone si trova nella riga 0 oppure nella riga 7;
-- Uno dei due re non è presente sulla scacchiera;
-- Il numero di cavalli di un giocatore è maggiore di due.
+- un pedone si trova nella riga 0 oppure nella riga 7;
+- uno dei due re non è presente sulla scacchiera;
+- il numero di cavalli di un giocatore è maggiore di due.
 
 **Suggerimento**: possono risultare utili le funzioni `islower(char)` e `isupper(char)` che restituiscono 1 se il parametro è un carattere alfabetico minuscolo o maiuscolo rispettivamente; e la funzione `tolower(char)` che restituisce il carattere alfabetico minuscolo corrispondente al parametro maiuscolo (e restituisce il parametro stesso negli altri casi).
